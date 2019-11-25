@@ -1,0 +1,75 @@
+/**
+Nuestro fichero de CSS
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+}
+
+h1 {
+    color: blue;
+}
+
+main:before{
+    content: "Mobile First";
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: lightgray;
+}
+
+.sticky-top{
+
+}
+
+.position-fixed{
+
+}
+
+.position-static{
+
+}
+
+.position-relative{
+
+}
+
+.position-absolute {
+    top: 80px;
+    left: 315px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+
+ Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    main:before{
+        content: "Small device 576";
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    main:before{
+        content: "Medium device 768";
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    main:before{
+        content: "Large device 992";
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    main:before{
+        content: "Extra Large device 1200";
+    }
+}
