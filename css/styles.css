@@ -10,66 +10,74 @@ h1 {
     color: blue;
 }
 
-main:before{
+main:before {
     content: "Mobile First";
 }
 
-footer a{
+footer a {
     color: white;
 }
 
-footer a:hover{
+footer a:hover {
     color: lightgray;
 }
 
-.sticky-top{
-
+.position-fixed {
+    top: 590px;
+    left: 470px;
 }
 
-.position-fixed{
-
-}
-
-.position-static{
-
-}
-
-.position-relative{
-
+.position-relative {
+    left: 35vW;
+    top: -2vh;
 }
 
 .position-absolute {
-    top: 80px;
-    left: 315px;
+    top: 12vh;
+    left: 35vw;
+}
+
+#ejemplo .row{
+    height:20vh;
+}
+
+.row div[class^="col"] {
+    border: 1px solid #333;
+    background-color: rgb(172, 172, 172);
+    padding: 20px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap
 
  Small devices (landscape phones, 576px and up)*/
+
 @media (min-width: 576px) {
-    main:before{
+    main:before {
         content: "Small device 576";
     }
 }
 
 /*Medium devices (tablets, 768px and up)*/
+
 @media (min-width: 768px) {
-    main:before{
+    main:before {
         content: "Medium device 768";
     }
 }
 
 /*Large devices (desktops, 992px and up)*/
+
 @media (min-width: 992px) {
-    main:before{
+    main:before {
         content: "Large device 992";
     }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
+
 @media (min-width: 1200px) {
-    main:before{
+    main:before {
         content: "Extra Large device 1200";
     }
 }

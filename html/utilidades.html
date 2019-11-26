@@ -16,26 +16,29 @@
 
 <body>
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
-        <a class="navbar-brand" href="/index.html">Indice</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Indice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/html/componentes.html"> Componentes </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/html/grid.html"> Grid System </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/html/utilidades.html"> Utilidades </a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/componentes.html"> Componentes </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/grid.html"> Grid System </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/html/utilidades.html"> Utilidades </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <main class="container">
         <div class="m-4 card text-center border border-primary rounded">
             <div class="card-header">
@@ -94,14 +97,42 @@
             <div class="d-flex flex-wrap card-body">
                 <div class="position-absolute p-3 m-3 bg-warning text-dark">Absolute</div>
                 <div class="sticky-top p-3 m-3 bg-warning text-dark">Sticky</div>
-                <!-- <div class="position-fixed p-3 m-3 bg-warning text-dark">Fixed-Top</div>
-                <div class="position-fixed p-3 m-3 bg-warning text-dark">Fixed-Bottom</div>
+                <div class="position-fixed p-3 m-3 bg-warning text-dark">Fixed</div>
                 <div class="position-static p-3 m-3 bg-warning text-dark">Static</div>
-                <div class="position-relative p-3 m-3 bg-warning text-dark">Relative</div>-->
-
+                <div class="position-relative p-3 m-3 bg-warning text-dark">Relative</div>
             </div>
         </div>
 
+        <div class="m-4 card text-center border border-primary rounded">
+            <div class="card-header">
+                Streched-link
+            </div>
+            <div class="card-body">
+                <p class="card-text">Al utilizar <code>stretched-link</code> se convierte en un link todo hasta un padre
+                    relativo.</p>
+
+                <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+        </div>
+        <div class="m-4 card text-center border border-primary rounded">
+            <div class="card-header">
+                Vertical align
+            </div>
+            <div class="card-body">
+                    <table style="height: 100px;">
+                            <tbody>
+                              <tr>
+                                <td class="align-baseline">baseline</td>
+                                <td class="align-middle">middle</td>
+                                <td class="align-text-top">text-top</td>
+                                <td class="align-bottom">bottom</td>
+                                <td class="align-top">top </td>
+                                <td class="align-text-bottom">text-bottom</td>
+                              </tr>
+                            </tbody>
+                          </table>
+            </div>
+        </div>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -119,4 +150,4 @@
 </html>
 
 Leer clearfix y float de moodle
-Utilidades: Borders, Colors, Display, Embed, Position, Streched-link, vertical align
+Utilidades: Borders, Colors, Display, Embed, Position, Streched-link, Vertical align
